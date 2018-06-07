@@ -5,20 +5,37 @@
             <h2 class="login-title">center</h2>
             <div class="login-box">
                 <el-form  label-width="60px" class="demo-ruleForm">
-                <el-form-item label="" >
-                    <el-input type="text"  placeholder="请填写用户名"></el-input>
+                <el-form-item  >
+                    <el-input prefix-icon="icon-account1" type="text"  placeholder="请填写用户名"></el-input>
                 </el-form-item>
-                <el-form-item label="">
-                    <el-input type="password"  placeholder="请填写密码"></el-input>
-                </el-form-item>
-                <el-form-item>
-                    <el-button type="primary" class="button">立即登录</el-button>
+                <el-form-item porp="password">
+                    <el-input type="password" prefix-icon="icon-Password" placeholder="请填写密码"></el-input>
                 </el-form-item>
                 <el-form-item>
-                    <el-button  class="button">试玩</el-button>
+                    <el-button type="primary" class="button" >立即登录</el-button>
+                </el-form-item>
+                <el-form-item>
+                    <el-checkbox>我已阅读并同意</el-checkbox>
+                    <el-button type="text">用户协议</el-button>
+                </el-form-item>
+                <el-form-item>
+                    <el-button type="text" class="button">试玩</el-button>
                 </el-form-item>
                 </el-form>
-                
+                <el-tabs>
+                    <el-button type="text">线路检测</el-button>
+                    <el-button type="text">登录器下载</el-button>
+                    <el-button type="text">手机端下载</el-button>
+                    <el-button type="text">在线客服</el-button>
+                </el-tabs>
+            </div>
+            <div class="bottom-text">
+                <p>建议使用1366*768以上分辨率，并使用谷歌浏览器，火狐浏览器，IE9以上浏览器浏览本站</p>
+                <el-tabs>
+                    <el-button type="text">谷歌</el-button>
+                    <el-button type="text">火狐</el-button>
+                    <el-button type="text">IE</el-button>
+                </el-tabs>
             </div>
         </div>
 
@@ -29,12 +46,13 @@
                 <p></p>
             </div>
             <div class="login-box-right">
+                <p>欢迎登陆***娱乐在线</p>
                 <el-form  label-width="60px" class="demo-ruleForm">
-                <el-form-item label="" >
-                    <el-input type="text"  placeholder="请填写用户名"></el-input>
+                <el-form-item  >
+                    <el-input type="text" prefix-icon="icon-gerenzhongxin" placeholder="请填写用户名"></el-input>
                 </el-form-item>
-                <el-form-item label="">
-                    <el-input type="password"  placeholder="请填写密码"></el-input>
+                <el-form-item >
+                    <el-input type="password" prefix-icon="icon-Password" placeholder="请填写密码"></el-input>
                 </el-form-item>
                 <el-form-item >
                     <el-button   type="primary" class="button" >立即登录</el-button>
@@ -43,6 +61,10 @@
                     <el-button  class="button">试玩</el-button>
                 </el-form-item>
                 </el-form>
+            </div>
+            <div class="bottom-text">
+                <p >建议使用1366*768以上分辨率，并使用谷歌浏览器，火狐浏览器，IE9以上浏览器浏览本站</p>
+                
             </div>
         </div>
     </div>
@@ -84,6 +106,11 @@
     .login-box-right{
         position: absolute;
         right:0;
+    }
+    .bottom-text{
+        position: absolute;
+        bottom:-560px;
+        left: 35%;
     }
 </style>
 

@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-    Hello, todo-list!<DsLogin type="2"></DsLogin>
+    Hello, todo-list!<DsLogin type="1"></DsLogin>
   </div>
 </template>
 
@@ -34,8 +34,10 @@ export default {
   margin-top: 60px;
 }
 
-h1, h2 {
+h1, h2,p {
   font-weight: normal;
+  margin:0;
+  padding: 0;
 }
 
 
