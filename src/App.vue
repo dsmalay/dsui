@@ -41,7 +41,7 @@ export default {
         width:250,
         height:50,
       },
-      saoyisao:'Ф┴╚Д╦─Ф┴╚Г╚▀Е┬╩Д╦▀Х╫╫'
+      saoyisao:'и╗р╩и╗а╒©лобть'
       }
   },
     methods:{
