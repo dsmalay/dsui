@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-    Hello, todo-list!<DsLogin type="1"></DsLogin>
+    Hello, todo-list!<DsLogin type="1" ></DsLogin>
   </div>
 </template>
 

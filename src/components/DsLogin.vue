@@ -3,15 +3,16 @@
     <div>
        <div id="login" >
             <div class="login-box" id="box">
+
                 <el-form  label-width="60px" class="">
                     <el-form-item  >
                         <el-input prefix-icon="icon-account1" type="text"  placeholder="请填写用户名"></el-input>
                     </el-form-item>
                     <el-form-item >
-                        <el-input type="password" prefix-icon="icon-Password" placeholder="请填写密码"></el-input>
+                        <el-input type="password" prefix-icon="icon-Password"  placeholder="请填写密码"></el-input>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" class="button" >立即登录</el-button>
+                        <el-button type="primary" class="button"  >立即登录</el-button>
                     </el-form-item>
                     <el-form-item style="display:none">
                         <el-checkbox>我已阅读并同意</el-checkbox>
@@ -22,15 +23,24 @@
                             <span>联系客服</span>
                     </el-form-item>
                     <el-form-item>
-                        <el-radio style="display:none">记住密码</el-radio>
-                        <span style="display:inlne-block">
+                        <el-checkbox style="display:inline-block">记住密码</el-checkbox>
+                        <span style="display:none">
                             <el-checkbox>同意</el-checkbox>
                             <span>协议与条款</span>
                         </span>
-                        <el-button type="text" >试玩</el-button>
+                        <el-button type="text" class="" >试玩</el-button>
+                    </el-form-item>
+                    <el-form-item style="display:inlne-block">
+                        <el-tabs>
+                            <el-button type="danger">联系客服</el-button>
+                            <el-button type="info">域名验证</el-button>
+                            <el-button type="primary">IOS下载</el-button>
+                            <el-button type="success">安卓下载</el-button>
+                        </el-tabs>
                     </el-form-item>
                 </el-form>
-                <el-tabs>
+
+                <el-tabs style="display:none">
                     <el-button type="text">线路检测</el-button>
                     <el-button type="text">登录器下载</el-button>
                     <el-button type="text">手机端下载</el-button>
@@ -38,7 +48,7 @@
                 </el-tabs>
             </div>
             <div class="bottom-text">
-                <p>建议使用1366*768以上分辨率，并使用谷歌浏览器，火狐浏览器，IE9以上浏览器浏览本站</p>
+                <span>建议使用1366*768以上分辨率，并使用谷歌浏览器，火狐浏览器，IE9以上浏览器浏览本站</span>
                 <el-tabs>
                     <el-button type="text">谷歌</el-button>
                     <el-button type="text">火狐</el-button>
@@ -84,19 +94,20 @@ export default {
   name: "dsLogin",
   data() {
     return {
+        
+    };
+  },
+  mounted() {
+    var r = document.getElementById("box");  
+    if (this.type == 1) {
+      r.style = "left : 50%";
       
+    } else if (this.type == 2) {
+        r.style = "right : 5%";
     }
   },
-  mounted(){
-      var r = document.getElementById("box");
-      if(this.type == 1){
-          r.style = "left:50%";
-      }else if(this.type == 2){
-        r.style = 'right:0';
-      };
-  },
   methods: {
-    addNewTodo: function() {}
+    addNewTodo: function() { },
   }
 };
 </script>
@@ -109,22 +120,19 @@ export default {
   width: 500px;
   height: 300px;
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
   /* left: 50%; */
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-left: -250px;
 }
 .button {
-  width: 442px;
-}
-.login-box-right {
-  position: absolute;
-  right: 0;
+  width: 440px;
 }
 .bottom-text {
   position: absolute;
   bottom: -560px;
   left: 35%;
 }
+
 </style>
 
