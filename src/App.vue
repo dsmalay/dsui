@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png">
-    <router-view/> -->
+    <!-- <img src="./assets/logo.png"> -->
+    <router-view> </router-view>
     <div class="box">
+      <router-link to='login'>login</router-link>
       <zhuti :tInit="wenTitle"></zhuti>
       <ewm :eSrc="epicture" :sao="saoyisao" v-on:djClick="dianji" :downlink="downSrc"></ewm>
       <ewm :eSrc="epicture" :sao="saoyisao" v-on:djClick="dianji" :downlink="downSrc"></ewm>
     </div>
     <phone :phone="{init,phonePage}" v-on:wiClick='download'></phone>
-
   </div>
  
 </template>
@@ -17,12 +17,15 @@
 import phone from './components/phone.vue'
 import ewm from './components/ewm.vue'
 import zhuti from './components/zhuti.vue'
+import DsLogin from './components/DsLogin'
 export default {
   name: 'App',
   components: {
     phone,
     ewm,
-    zhuti
+    zhuti,
+    DsLogin
+    
   },
    data() {
     return{
@@ -41,7 +44,7 @@ export default {
         width:250,
         height:50,
       },
-      saoyisao:'É¨Ò»É¨Á¢¿ÌÏÂÔØ'
+      saoyisao:'É¨Ò»É¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'
       }
   },
     methods:{

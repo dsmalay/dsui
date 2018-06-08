@@ -90,21 +90,23 @@
 
 <script>
 export default {
-  props: ["type"],
-  name: "dsLogin",
+  
+
   data() {
     return {
         
     };
   },
-  mounted() {
-    var r = document.getElementById("box");  
-    if (this.type == 1) {
-      r.style = "left : 50%";
+props: ["type"],
 
-    } else if (this.type == 2) {
-        r.style = "right : 5%";
-    }
+  mounted() {
+    // var r = document.getElementById("box");  
+    // if (this.type == 1) {
+    //   r.style = "left : 50%";
+
+    // } else if (this.type == 2) {
+    //     r.style = "right : 5%";
+    // }
   },
   methods: {
     addNewTodo: function() { },
