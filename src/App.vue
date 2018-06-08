@@ -44,7 +44,7 @@ export default {
         width:250,
         height:50,
       },
-      saoyisao:'ɨһɨ��������'
+      saoyisao:'扫一扫下载'
       }
   },
     methods:{
