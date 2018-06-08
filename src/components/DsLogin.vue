@@ -101,7 +101,7 @@ export default {
     var r = document.getElementById("box");  
     if (this.type == 1) {
       r.style = "left : 50%";
-      
+
     } else if (this.type == 2) {
         r.style = "right : 5%";
     }
