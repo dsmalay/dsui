@@ -4,20 +4,24 @@ import VueRouter from "vue-router"
 Vue.use(VueRouter)
 
 import login from './components/DsLoginPage.vue';
-import EWM from './components/ewmPage.vue';
-import PHONE from './components/phonePage.vue';
-import ZHUTI from './components/zhutiPage.vue';
+import ewm from './components/ewmPage.vue';
+import phone from './components/phonePage.vue';
+import zhuti from './components/zhutiPage.vue';
+
+
 
 const routes = [
   {path: '/login', component: login},
-  {path: '/ewm', component: EWM},
-  {path: '/phone', component: PHONE},
-  {path: '/zhuti', component: ZHUTI},
+  {path: '/ewm', component: ewm},
+  {path: '/phone', component: phone},
+  {path: '/zhuti', component: zhuti},
 ]
 
 export default new VueRouter({
   routes
 })
+
+
 
 
 

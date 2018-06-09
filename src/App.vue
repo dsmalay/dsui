@@ -65,4 +65,11 @@ export default {
   display:inline-block;
   height:400px;
 }
+a{
+ text-decoration: none;
+  color:#fff;
+  padding:5px;
+  background:orange;
+  border-radius: 5px;
+  }
 </style>
