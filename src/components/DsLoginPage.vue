@@ -9,15 +9,16 @@
   import login from './directive/DsLogin'
   import login2 from './login'
 
+
 	export default {
 		components:{login2},
     data(){
 		  return{
-        
+
       }
     },
     methods:{
-      
+
     },
 	}
 
