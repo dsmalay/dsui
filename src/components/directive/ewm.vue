@@ -1,5 +1,5 @@
 <template>
-  <div class="ewm-box">
+  <div class="ewm-box-a">
     <img :src="eSrc">
     <p class="wenzi">{{sao}}</p>
     <div class="btn-xz">
@@ -34,26 +34,26 @@
     }
   }
 </script>
-<style type="text/css">
+<style type="text/css" scoped>
   * {
     box-sizeing: border-box;
   }
-
-  .ewm-box {
+  .ewm-box-a{
     width: 100px;
     height: 100px;
     display: inline-block;
-    margin:5px auto;
+    margin:10px auto;
   }
-
   .wenzi {
     font-size: 12px;
     margin-top: 0;
     text-align: center;
   }
   .btn-xz{
+    margin-top:10px;
     width:100px;
     text-align: center;
+    margin:0 auto;
   }
   .btn-xz a{
     font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;

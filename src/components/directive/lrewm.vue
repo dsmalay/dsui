@@ -59,8 +59,8 @@
   border-radius: 8px;
   border:1px solid #000;
   margin-top:15px;
-
   position:relative;
+  margin: 20px auto;
 
 }
 .box-first{

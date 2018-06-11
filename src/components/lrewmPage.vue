@@ -1,6 +1,6 @@
 <template>
   <div>
-    <lrewm :listA="listA" :listI="listI"></lrewm>
+    <lrewm :listA="listA" :listI="listI" class="lrewm"></lrewm>
 
   </div>
 </template>
