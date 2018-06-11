@@ -29,12 +29,13 @@
 </script>
 <style type="text/css">
   .title-box {
-
+    font-size: 25px;
+    font-weight: bold;
+    /* color: orange; */
+    margin: auto;
   }
 
   span {
-    font-size: 25px;
-    font-weight: bold;
-    color: orange;
+    
   }
 </style>

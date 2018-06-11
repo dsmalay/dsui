@@ -12,7 +12,7 @@
             return {
                 init:{
             width:500,
-            height:300,
+            height:300,msg:''
              },
               phonePage:{
                 wiSrc1:'./static/phone.png',
@@ -20,6 +20,7 @@
               },
           }
         },
+
       methods:{
         download:function(){
 

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
      <router-link to='/login'>login</router-link>
      <router-link to='/ewm'>ewm</router-link>
      <router-link to='/phone'>phone</router-link>
@@ -57,7 +56,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*text-align: center;*/
+  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
@@ -71,5 +70,5 @@ a{
   padding:5px;
   background:orange;
   border-radius: 5px;
-  }
+ }
 </style>

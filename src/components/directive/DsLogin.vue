@@ -2,8 +2,7 @@
 
     <div>
        <div id="login" >
-            <div class="login-box" id="box">
-
+            <div :class="[type==1?'login-box':'login-box2']" id="box">
                 <el-form  label-width="60px" class="">
                     <el-form-item  >
                         <el-input prefix-icon="icon-account1" type="text"  placeholder="请填写用户名"></el-input>
@@ -39,7 +38,6 @@
                         </el-tabs>
                     </el-form-item>
                 </el-form>
-
                 <el-tabs style="display:none">
                     <el-button type="text">线路检测</el-button>
                     <el-button type="text">登录器下载</el-button>
@@ -90,26 +88,20 @@
 
 <script>
 export default {
-  
+  props:['type'],
 
   data() {
     return {
         
     };
   },
-props: ["type"],
 
   mounted() {
-    // var r = document.getElementById("box");  
-    // if (this.type == 1) {
-    //   r.style = "left : 50%";
-
-    // } else if (this.type == 2) {
-    //     r.style = "right : 5%";
-    // }
+   
   },
   methods: {
     addNewTodo: function() { },
+
   }
 };
 </script>
@@ -117,14 +109,24 @@ props: ["type"],
 <style>
 #login {
   position: relative;
+  top:20px;
 }
 .login-box {
   width: 500px;
   height: 300px;
   position: absolute;
   /* top: 50%; */
-  /* left: 50%; */
+  left: 50%;
   /* margin-top: 100px; */
+  margin-left: -250px;
+}
+.login-box2 {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  right:0;
   margin-left: -250px;
 }
 .button {

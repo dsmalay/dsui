@@ -1,31 +1,23 @@
 
 <template>
 	<div>
-		 <phone :phone="{init,phonePage}" v-on:wiClick='download'></phone>
+		 <login type="2"></login>
 	</div>
 </template>
 
 <script type="text/javascript">
-	import phone from './directive/phone.vue'
+  import login from './directive/DsLogin'
+  
+
 	export default {
-		components:{phone},
+		components:{login},
     data(){
 		  return{
-        init:{
-          width:500,
-          height:300,
-        },
-        phonePage:{
-          wiSrc1:'./static/phone.png',
-          epicture:'./static/ewm.png',
-
-        },
+        
       }
     },
     methods:{
-      download:function(v){
-        console.log(v)
-      },
+      
     },
 	}
 
