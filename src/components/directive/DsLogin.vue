@@ -29,75 +29,35 @@
                         </span>
                         <el-button type="text" class="" >试玩</el-button>
                     </el-form-item>
-                    <el-form-item style="display:inlne-block">
-                        <el-tabs>
-                            <el-button type="danger">联系客服</el-button>
-                            <el-button type="info">域名验证</el-button>
-                            <el-button type="primary">IOS下载</el-button>
-                            <el-button type="success">安卓下载</el-button>
-                        </el-tabs>
+                    <el-form-item :class="lianxi?'fade-show':'fade-hide'">
+                        <buttonTabs></buttonTabs>
                     </el-form-item>
                 </el-form>
-                <el-tabs style="display:none">
-                    <el-button type="text">线路检测</el-button>
-                    <el-button type="text">登录器下载</el-button>
-                    <el-button type="text">手机端下载</el-button>
-                    <el-button type="text">在线客服</el-button>
-                </el-tabs>
+                <lineCheck></lineCheck>
             </div>
-            <div class="bottom-text">
-                <span>建议使用1366*768以上分辨率，并使用谷歌浏览器，火狐浏览器，IE9以上浏览器浏览本站</span>
-                <el-tabs>
-                    <el-button type="text">谷歌</el-button>
-                    <el-button type="text">火狐</el-button>
-                    <el-button type="text">IE</el-button>
-                </el-tabs>
-            </div>
+            <dsLoginBottom></dsLoginBottom>
        </div>
 
-        <!-- 登陆框在右边的 -->
-        <!-- <div id="login"  v-if="type == 2">
-            <div>
-                <h2>right</h2>
-                <p></p>
-            </div>
-            <div class="login-box-right">
-                <p>欢迎登陆***娱乐在线</p>
-                <el-form  label-width="60px" class="demo-ruleForm">
-                <el-form-item  >
-                    <el-input type="text" prefix-icon="icon-gerenzhongxin" placeholder="请填写用户名"></el-input>
-                </el-form-item>
-                <el-form-item >
-                    <el-input type="password" prefix-icon="icon-Password" placeholder="请填写密码"></el-input>
-                </el-form-item>
-                <el-form-item >
-                    <el-button   type="primary" class="button" >立即登录</el-button>
-                </el-form-item>
-                <el-form-item>
-                    <el-button  class="button">试玩</el-button>
-                </el-form-item>
-                </el-form>
-            </div>
-            <div class="bottom-text">
-                <p >建议使用1366*768以上分辨率，并使用谷歌浏览器，火狐浏览器，IE9以上浏览器浏览本站</p>
-                
-            </div>
-        </div> -->
     </div>
 </template>
 
 <script>
+import dsLoginBottom from './dsLoginBottom'
+import buttonTabs from './buttonTabs'
+import lineCheck from './lineCheck/lineCheck'
+
 export default {
   props:['type'],
 
   data() {
     return {
-        
+        lianxi:true
     };
   },
-
-  mounted() {
-   
+  components:{
+      dsLoginBottom,
+      buttonTabs,
+      lineCheck
   },
   methods: {
     addNewTodo: function() { },
@@ -115,17 +75,13 @@ export default {
   width: 500px;
   height: 300px;
   position: absolute;
-  /* top: 50%; */
   left: 50%;
-  /* margin-top: 100px; */
   margin-left: -250px;
 }
 .login-box2 {
   width: 500px;
   height: 300px;
   position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
   right:0;
   margin-left: -250px;
 }
@@ -137,6 +93,11 @@ export default {
   bottom: -560px;
   left: 35%;
 }
-
+.fade-hide{
+    display: none;
+}
+.fade-show{
+    display: inline-block;
+}
 </style>
 
