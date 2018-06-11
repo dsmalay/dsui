@@ -34,6 +34,7 @@
                     </el-form-item>
                 </el-form>
                 <lineCheck></lineCheck>
+                
             </div>
             <dsLoginBottom></dsLoginBottom>
        </div>
