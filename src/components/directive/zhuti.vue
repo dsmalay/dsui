@@ -29,10 +29,6 @@
 </script>
 <style type="text/css">
   .title-box {
-
-  }
-
-  span {
     font-size: 25px;
     font-weight: bold;
     color: orange;

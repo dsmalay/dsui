@@ -5,6 +5,8 @@
      <router-link to='/ewm'>ewm</router-link>
      <router-link to='/phone'>phone</router-link>
      <router-link to='/zhuti'>zhuti</router-link>
+     <router-link to='/lrewm'>lrewm</router-link>
+
     <div>
       <router-view> </router-view>
     </div>

@@ -5,7 +5,6 @@
     <div class="btn-xz">
       <a @click="xiazai" :href="downlink">下载</a>
     </div>
-
     <!-- <span class="iconfont icon-anzhuo"></span> -->
   </div>
 </template>
@@ -14,7 +13,9 @@
     name: 'ewm',
     props: ['eSrc', 'sao', 'downlink'],
     data() {
-      return {}
+      return {
+        message:''
+      }
     },
     methods: {
       addNewTodo: function () {

@@ -1,14 +1,14 @@
 
 <template>
 	<div>
-		 <phone :phone="{init,phonePage}" v-on:wiClick='download'></phone>
+		 <login :phone="{init,phonePage}" v-on:wiClick='download' class="login"></login>
 	</div>
 </template>
 
 <script type="text/javascript">
-	import phone from './directive/phone.vue'
+	import login from './directive/Dslogin.vue'
 	export default {
-		components:{phone},
+		components:{login},
     data(){
 		  return{
         init:{
@@ -32,5 +32,9 @@
 </script>
 
 <style type="text/css">
+  .login{
+    margin-left:00px;
+    margin-left:100px;
+  }
 
 </style>

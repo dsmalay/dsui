@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import './assets/fonts/fonts-icon/iconfont.css'
+import './assets/font/iconfont.css'
 
 // import DsLogin from './components/DsLogin'
 import router from './router.js'

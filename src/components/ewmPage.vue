@@ -1,6 +1,7 @@
 <template>
 	<div>
 		 <ewm :eSrc="epicture" :sao="saoyisao" :downlink="downSrc"></ewm>
+
 	</div>
 </template>
 
