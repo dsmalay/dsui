@@ -31,6 +31,11 @@
   .title-box {
     font-size: 25px;
     font-weight: bold;
-    color: orange;
+    /* color: orange; */
+    margin: auto;
+  }
+
+  span {
+    
   }
 </style>

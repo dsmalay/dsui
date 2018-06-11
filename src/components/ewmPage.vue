@@ -6,20 +6,22 @@
 </template>
 
 <script type="text/javascript">
-	import ewm from './directive/ewm.vue'
-	export default {
-		components:{ewm},
-		data () {
-			return {
-        epicture: './static/ewm.png',
-        downSrc: 'http://www.baidu.com',
-        saoyisao: '扫一扫下载'
-      }
-		}
-	}
+import ewm from "./directive/ewm.vue";
 
+export default {
+  components: { ewm },
+  data() {
+    return {
+      epicture: "./static/ewm.png",
+      downSrc: "http://www.baidu.com",
+      saoyisao: "扫一扫下载"
+    };
+  },
+  methods:{
+	 
+  }
+};
 </script>
 
 <style type="text/css">
-
 </style>
