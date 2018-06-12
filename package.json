@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "element-ui": "^2.4.0",
+    "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "vue": "^2.5.11",
     "vue-router": "^3.0.1",
